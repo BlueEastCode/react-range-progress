@@ -257,29 +257,6 @@ Range.defaultProps = {
   onChange: () => {}
 };
 
-const colorWithAlpha = {
-  r: PropTypes.number.isRequired,
-  g: PropTypes.number.isRequired,
-  b: PropTypes.number.isRequired,
-  a: PropTypes.number.isRequired
-};
 
-Range.propTypes = {
-  fillColor: PropTypes.shape(colorWithAlpha),
-  trackColor: PropTypes.shape(colorWithAlpha),
-  thumbColor: PropTypes.shape(colorWithAlpha),
-  hideThumb: PropTypes.bool,
-  height: PropTypes.number,
-  thumbSize: PropTypes.number,
-  min: PropTypes.number,
-  max: PropTypes.number,
-  onChange: PropTypes.func,
-  value: PropTypes.number,
-  width: React.PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.number
-  ]),
-  readOnly: PropTypes.bool
-};
 
 export default Range;
